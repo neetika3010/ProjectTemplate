@@ -1,0 +1,13 @@
+prefix=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env
+exec_prefix=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env
+libdir=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env/lib
+sharedlibdir=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env/lib
+includedir=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

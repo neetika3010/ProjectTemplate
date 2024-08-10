@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env
+exec_prefix=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env
+libdir=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env/lib
+includedir=/Users/neetikashree/Documents/GenAi-Sunny-projects/Setup/env/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
